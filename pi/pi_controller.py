@@ -8,6 +8,15 @@ import argparse
 def your_function():
     longitude = 13.21008
     latitude = 55.71106
+    current_coordsx = longitude
+    current_coordsy = latitude
+    startposx = longitude  
+    startposy = latitude
+    finalposx = longitude
+    finalposy = latitude 
+
+    
+
     return (longitude, latitude)
 #====================================================================================================
 
@@ -25,6 +34,14 @@ def run(current_coords, from_coords, to_coords, SERVER_URL):
                               'latitude': drone_coords[1]
                         }
             resp = session.post(SERVER_URL, json=drone_location)
+    
+    while (startpos.x-finalpos.x):
+        if startpos.x-finalpos.x > 0.001 {}
+        if startpos.x-finalpos.x < -0.001 {}
+
+    while (startpos.y-finalpos.y)
+        if startpos.y-finalpos.y > 0.001 {}
+        if startpos.y-finalpos.y < -0.001 {}
   #====================================================================================================
 
    
